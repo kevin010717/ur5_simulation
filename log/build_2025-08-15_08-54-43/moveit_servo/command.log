@@ -1,0 +1,4 @@
+Invoking command in '/home/robot/ur5_simulation/build/moveit_servo': /usr/bin/cmake --build /home/robot/ur5_simulation/build/moveit_servo -- -j18 -l18
+Invoked command in '/home/robot/ur5_simulation/build/moveit_servo' returned '0': /usr/bin/cmake --build /home/robot/ur5_simulation/build/moveit_servo -- -j18 -l18
+Invoking command in '/home/robot/ur5_simulation/build/moveit_servo': /usr/bin/cmake --install /home/robot/ur5_simulation/build/moveit_servo
+Invoked command in '/home/robot/ur5_simulation/build/moveit_servo' returned '0': /usr/bin/cmake --install /home/robot/ur5_simulation/build/moveit_servo

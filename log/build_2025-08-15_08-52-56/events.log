@@ -1,0 +1,1020 @@
+[0.000000] (-) TimerEvent: {}
+[0.000569] (-) JobUnselected: {'identifier': 'data_collection'}
+[0.000638] (-) JobUnselected: {'identifier': 'ur5_description'}
+[0.000680] (-) JobUnselected: {'identifier': 'ur5_moveit_config'}
+[0.000749] (moveit_servo) JobQueued: {'identifier': 'moveit_servo', 'dependencies': OrderedDict()}
+[0.000788] (moveit_servo) JobStarted: {'identifier': 'moveit_servo'}
+[0.006251] (moveit_servo) JobProgress: {'identifier': 'moveit_servo', 'progress': 'cmake'}
+[0.006856] (moveit_servo) Command: {'cmd': ['/usr/bin/cmake', '/home/robot/ur5_simulation/src/moveit_servo', '-DCMAKE_INSTALL_PREFIX=/home/robot/ur5_simulation/install/moveit_servo'], 'cwd': '/home/robot/ur5_simulation/build/moveit_servo', 'env': OrderedDict([('LIBRARY_PATH', '/usr/local/cuda-12.8/lib64:'), ('HTTPS_PROXY', 'http://127.0.0.1:7897/'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'robot'), ('no_proxy', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,172.29.0.0/16,::1'), ('all_proxy', 'socks://127.0.0.1:7897/'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/lib:/usr/local/cuda-12.8/lib64:'), ('OLDPWD', '/home/robot'), ('HOME', '/home/robot'), ('LESS', '-R'), ('CONDA_SHLVL', '0'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,172.29.0.0/16,::1'), ('ZSH', '/home/robot/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('SYSTEMD_EXEC_PID', '13457'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WAYLAND_DISPLAY', 'wayland-0'), ('https_proxy', 'http://127.0.0.1:7897/'), ('ROS_DISTRO', 'humble'), ('ALL_PROXY', 'socks://127.0.0.1:7897/'), ('LOGNAME', 'robot'), ('http_proxy', 'http://127.0.0.1:7897/'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USERNAME', 'robot'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/cuda-12.8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/robot-ThinkBook-16-G6-IMH:@/tmp/.ICE-unix/1792,unix/robot-ThinkBook-16-G6-IMH:/tmp/.ICE-unix/1792'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4b7b1f0c_2d46_44da_86a0_b7417178ec36'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.154'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.39F6A3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ROS_DOMAIN_ID', '1'), ('SHELL', '/usr/bin/zsh'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/robot/ur5_simulation/build/moveit_servo'), ('XDG_DATA_DIRS', '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('HTTP_PROXY', 'http://127.0.0.1:7897/'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble:')]), 'shell': False}
+[0.058180] (moveit_servo) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.097916] (moveit_servo) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.099805] (-) TimerEvent: {}
+[0.103351] (moveit_servo) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.164586] (moveit_servo) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.169560] (moveit_servo) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.169695] (moveit_servo) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.169878] (moveit_servo) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.171642] (moveit_servo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.199973] (-) TimerEvent: {}
+[0.232821] (moveit_servo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.239845] (moveit_servo) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.240186] (moveit_servo) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.240502] (moveit_servo) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.242330] (moveit_servo) StdoutLine: {'line': b'-- Found moveit_common: 2.5.9 (/opt/ros/humble/share/moveit_common/cmake)\n'}
+[0.243817] (moveit_servo) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.300149] (-) TimerEvent: {}
+[0.356293] (moveit_servo) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.400296] (-) TimerEvent: {}
+[0.458424] (moveit_servo) StderrLine: {'line': b"\x1b[0mmoveit_servo: You did not request a specific build type: Choosing 'Release' for maximum performance\x1b[0m\n"}
+[0.459157] (moveit_servo) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[0.462645] (moveit_servo) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[0.463381] (moveit_servo) StdoutLine: {'line': b'-- Found control_msgs: 4.8.0 (/opt/ros/humble/share/control_msgs/cmake)\n'}
+[0.482557] (moveit_servo) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.485043] (moveit_servo) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.489518] (moveit_servo) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.496128] (moveit_servo) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.500378] (-) TimerEvent: {}
+[0.504646] (moveit_servo) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.578443] (moveit_servo) StdoutLine: {'line': b'-- Found control_toolbox: 3.6.1 (/opt/ros/humble/share/control_toolbox/cmake)\n'}
+[0.600534] (-) TimerEvent: {}
+[0.600930] (moveit_servo) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.602283] (moveit_servo) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.674044] (moveit_servo) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.691425] (moveit_servo) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.700632] (-) TimerEvent: {}
+[0.716144] (moveit_servo) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.720707] (moveit_servo) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.792978] (moveit_servo) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.793275] (moveit_servo) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.800697] (-) TimerEvent: {}
+[0.869564] (moveit_servo) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.870578] (moveit_servo) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.900784] (-) TimerEvent: {}
+[0.955687] (moveit_servo) StdoutLine: {'line': b'-- Found moveit_core: 2.5.9 (/opt/ros/humble/share/moveit_core/cmake)\n'}
+[0.971453] (moveit_servo) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread \n'}
+[0.991118] (moveit_servo) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem \n'}
+[1.000850] (-) TimerEvent: {}
+[1.064904] (moveit_servo) StdoutLine: {'line': b'-- library: /usr/lib/x86_64-linux-gnu/libcurl.so\n'}
+[1.092002] (moveit_servo) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[1.100957] (-) TimerEvent: {}
+[1.193124] (moveit_servo) StdoutLine: {'line': b'-- Found moveit_ros_planning: 2.5.9 (/opt/ros/humble/share/moveit_ros_planning/cmake)\n'}
+[1.196369] (moveit_servo) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono \n'}
+[1.201020] (-) TimerEvent: {}
+[1.211648] (moveit_servo) StdoutLine: {'line': b'-- Found std_srvs: 4.9.0 (/opt/ros/humble/share/std_srvs/cmake)\n'}
+[1.245717] (moveit_servo) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.246578] (moveit_servo) StdoutLine: {'line': b'-- Found ament_cmake_gtest: 1.3.12 (/opt/ros/humble/share/ament_cmake_gtest/cmake)\n'}
+[1.247570] (moveit_servo) StdoutLine: {'line': b'-- Found ros_testing: 0.4.0 (/opt/ros/humble/share/ros_testing/cmake)\n'}
+[1.248936] (moveit_servo) StdoutLine: {'line': b'-- Found launch_testing_ament_cmake: 1.0.10 (/opt/ros/humble/share/launch_testing_ament_cmake/cmake)\n'}
+[1.250311] (moveit_servo) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[1.264709] (moveit_servo) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[1.269692] (moveit_servo) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[1.269867] (moveit_servo) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.269963] (moveit_servo) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[1.270048] (moveit_servo) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[1.283377] (moveit_servo) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[1.286679] (moveit_servo) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem \n'}
+[1.301115] (-) TimerEvent: {}
+[1.325234] (moveit_servo) StdoutLine: {'line': b"-- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built\n"}
+[1.349378] (moveit_servo) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.350227] (moveit_servo) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/robot/ur5_simulation/src/moveit_servo/include\n'}
+[1.350444] (moveit_servo) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.350809] (moveit_servo) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.351191] (moveit_servo) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[1.351460] (moveit_servo) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.352376] (moveit_servo) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.401226] (-) TimerEvent: {}
+[1.443330] (moveit_servo) StdoutLine: {'line': b'-- Generating done\n'}
+[1.476497] (moveit_servo) StdoutLine: {'line': b'-- Build files have been written to: /home/robot/ur5_simulation/build/moveit_servo\n'}
+[1.490151] (moveit_servo) CommandEnded: {'returncode': 0}
+[1.490827] (moveit_servo) JobProgress: {'identifier': 'moveit_servo', 'progress': 'build'}
+[1.491845] (moveit_servo) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/robot/ur5_simulation/build/moveit_servo', '--', '-j18', '-l18'], 'cwd': '/home/robot/ur5_simulation/build/moveit_servo', 'env': OrderedDict([('LIBRARY_PATH', '/usr/local/cuda-12.8/lib64:'), ('HTTPS_PROXY', 'http://127.0.0.1:7897/'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'robot'), ('no_proxy', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,172.29.0.0/16,::1'), ('all_proxy', 'socks://127.0.0.1:7897/'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/lib:/usr/local/cuda-12.8/lib64:'), ('OLDPWD', '/home/robot'), ('HOME', '/home/robot'), ('LESS', '-R'), ('CONDA_SHLVL', '0'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,172.29.0.0/16,::1'), ('ZSH', '/home/robot/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('SYSTEMD_EXEC_PID', '13457'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WAYLAND_DISPLAY', 'wayland-0'), ('https_proxy', 'http://127.0.0.1:7897/'), ('ROS_DISTRO', 'humble'), ('ALL_PROXY', 'socks://127.0.0.1:7897/'), ('LOGNAME', 'robot'), ('http_proxy', 'http://127.0.0.1:7897/'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USERNAME', 'robot'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/cuda-12.8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/robot-ThinkBook-16-G6-IMH:@/tmp/.ICE-unix/1792,unix/robot-ThinkBook-16-G6-IMH:/tmp/.ICE-unix/1792'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4b7b1f0c_2d46_44da_86a0_b7417178ec36'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.154'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.39F6A3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ROS_DOMAIN_ID', '1'), ('SHELL', '/usr/bin/zsh'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/robot/ur5_simulation/build/moveit_servo'), ('XDG_DATA_DIRS', '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('HTTP_PROXY', 'http://127.0.0.1:7897/'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble:')]), 'shell': False}
+[1.501290] (-) TimerEvent: {}
+[1.534406] (moveit_servo) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding CXX object CMakeFiles/servo_controller_input.dir/src/teleop_demo/joystick_servo_example.cpp.o\x1b[0m\n'}
+[1.535952] (moveit_servo) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o\x1b[0m\n'}
+[1.538441] (moveit_servo) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding CXX object CMakeFiles/moveit_servo_lib_parameters.dir/src/parameter_descriptor_builder.cpp.o\x1b[0m\n'}
+[1.538753] (moveit_servo) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/moveit_servo_lib_parameters.dir/src/servo_parameters.cpp.o\x1b[0m\n'}
+[1.538892] (moveit_servo) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding CXX object CMakeFiles/fake_command_publisher.dir/test/publish_fake_jog_commands.cpp.o\x1b[0m\n'}
+[1.539052] (moveit_servo) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o\x1b[0m\n'}
+[1.601435] (-) TimerEvent: {}
+[1.701831] (-) TimerEvent: {}
+[1.802238] (-) TimerEvent: {}
+[1.902647] (-) TimerEvent: {}
+[2.003100] (-) TimerEvent: {}
+[2.103512] (-) TimerEvent: {}
+[2.118352] (moveit_servo) StdoutLine: {'line': b'[ 21%] \x1b[32m\x1b[1mLinking CXX static library libgtest_main.a\x1b[0m\n'}
+[2.164743] (moveit_servo) StdoutLine: {'line': b'[ 21%] Built target gtest_main\n'}
+[2.203662] (-) TimerEvent: {}
+[2.304102] (-) TimerEvent: {}
+[2.404557] (-) TimerEvent: {}
+[2.504997] (-) TimerEvent: {}
+[2.605481] (-) TimerEvent: {}
+[2.625196] (moveit_servo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/ur5_simulation/src/moveit_servo/src/teleop_demo/joystick_servo_example.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kbool convertJoyToCmd(const std::vector<float, std::allocator<float> >&, const std::vector<int, std::allocator<int> >&, std::unique_ptr<geometry_msgs::msg::TwistStamped_<std::allocator<void> >, std::default_delete<geometry_msgs::msg::TwistStamped_<std::allocator<void> > > >&, std::unique_ptr<control_msgs::msg::JointJog_<std::allocator<void> >, std::default_delete<control_msgs::msg::JointJog_<std::allocator<void> > > >&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.625550] (moveit_servo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/ur5_simulation/src/moveit_servo/src/teleop_demo/joystick_servo_example.cpp:106:78:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kbuttons\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.625678] (moveit_servo) StderrLine: {'line': b'  106 | bool convertJoyToCmd(const std::vector<float>& axes, \x1b[01;35m\x1b[Kconst std::vector<int>& buttons\x1b[m\x1b[K,\n'}
+[2.625777] (moveit_servo) StderrLine: {'line': b'      |                                                      \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[2.625881] (moveit_servo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/ur5_simulation/src/moveit_servo/src/teleop_demo/joystick_servo_example.cpp:108:68:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kjoint\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.625996] (moveit_servo) StderrLine: {'line': b'  108 |                      \x1b[01;35m\x1b[Kstd::unique_ptr<control_msgs::msg::JointJog>& joint\x1b[m\x1b[K)\n'}
+[2.626098] (moveit_servo) StderrLine: {'line': b'      |                      \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[2.705658] (-) TimerEvent: {}
+[2.806171] (-) TimerEvent: {}
+[2.906671] (-) TimerEvent: {}
+[3.007215] (-) TimerEvent: {}
+[3.107646] (-) TimerEvent: {}
+[3.208108] (-) TimerEvent: {}
+[3.308603] (-) TimerEvent: {}
+[3.409133] (-) TimerEvent: {}
+[3.509632] (-) TimerEvent: {}
+[3.610101] (-) TimerEvent: {}
+[3.710544] (-) TimerEvent: {}
+[3.811009] (-) TimerEvent: {}
+[3.911455] (-) TimerEvent: {}
+[4.011940] (-) TimerEvent: {}
+[4.112399] (-) TimerEvent: {}
+[4.212857] (-) TimerEvent: {}
+[4.313327] (-) TimerEvent: {}
+[4.413825] (-) TimerEvent: {}
+[4.514308] (-) TimerEvent: {}
+[4.614766] (-) TimerEvent: {}
+[4.715192] (-) TimerEvent: {}
+[4.815687] (-) TimerEvent: {}
+[4.916163] (-) TimerEvent: {}
+[5.016614] (-) TimerEvent: {}
+[5.100579] (moveit_servo) StdoutLine: {'line': b'[ 24%] \x1b[32m\x1b[1mLinking CXX executable fake_command_publisher\x1b[0m\n'}
+[5.116741] (-) TimerEvent: {}
+[5.210034] (moveit_servo) StdoutLine: {'line': b'[ 24%] Built target fake_command_publisher\n'}
+[5.216853] (-) TimerEvent: {}
+[5.317219] (-) TimerEvent: {}
+[5.417662] (-) TimerEvent: {}
+[5.518144] (-) TimerEvent: {}
+[5.618608] (-) TimerEvent: {}
+[5.719088] (-) TimerEvent: {}
+[5.819513] (-) TimerEvent: {}
+[5.919946] (-) TimerEvent: {}
+[6.020368] (-) TimerEvent: {}
+[6.120835] (-) TimerEvent: {}
+[6.221321] (-) TimerEvent: {}
+[6.321792] (-) TimerEvent: {}
+[6.422258] (-) TimerEvent: {}
+[6.522699] (-) TimerEvent: {}
+[6.623102] (-) TimerEvent: {}
+[6.652472] (moveit_servo) StdoutLine: {'line': b'[ 27%] \x1b[32m\x1b[1mLinking CXX static library libgtest.a\x1b[0m\n'}
+[6.692409] (moveit_servo) StdoutLine: {'line': b'[ 27%] Built target gtest\n'}
+[6.723221] (-) TimerEvent: {}
+[6.823602] (-) TimerEvent: {}
+[6.923968] (-) TimerEvent: {}
+[7.024369] (-) TimerEvent: {}
+[7.124848] (-) TimerEvent: {}
+[7.225305] (-) TimerEvent: {}
+[7.325779] (-) TimerEvent: {}
+[7.426214] (-) TimerEvent: {}
+[7.526634] (-) TimerEvent: {}
+[7.626999] (-) TimerEvent: {}
+[7.727364] (-) TimerEvent: {}
+[7.827784] (-) TimerEvent: {}
+[7.928184] (-) TimerEvent: {}
+[8.028623] (-) TimerEvent: {}
+[8.129006] (-) TimerEvent: {}
+[8.229405] (-) TimerEvent: {}
+[8.329788] (-) TimerEvent: {}
+[8.430178] (-) TimerEvent: {}
+[8.530562] (-) TimerEvent: {}
+[8.630960] (-) TimerEvent: {}
+[8.731391] (-) TimerEvent: {}
+[8.831778] (-) TimerEvent: {}
+[8.932162] (-) TimerEvent: {}
+[9.032520] (-) TimerEvent: {}
+[9.132880] (-) TimerEvent: {}
+[9.233252] (-) TimerEvent: {}
+[9.333646] (-) TimerEvent: {}
+[9.434028] (-) TimerEvent: {}
+[9.500581] (moveit_servo) StdoutLine: {'line': b'[ 30%] \x1b[32m\x1b[1mLinking CXX shared library libmoveit_servo_lib_parameters.so\x1b[0m\n'}
+[9.534171] (-) TimerEvent: {}
+[9.634558] (-) TimerEvent: {}
+[9.694657] (moveit_servo) StdoutLine: {'line': b'[ 30%] Built target moveit_servo_lib_parameters\n'}
+[9.712616] (moveit_servo) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/test_servo_collision.dir/test/test_servo_collision.cpp.o\x1b[0m\n'}
+[9.712901] (moveit_servo) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/test_servo_integration.dir/test/test_servo_interface.cpp.o\x1b[0m\n'}
+[9.712983] (moveit_servo) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/moveit_servo_lib.dir/src/enforce_limits.cpp.o\x1b[0m\n'}
+[9.714765] (moveit_servo) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/moveit_servo_lib.dir/src/servo.cpp.o\x1b[0m\n'}
+[9.715300] (moveit_servo) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/moveit_servo_lib.dir/src/collision_check.cpp.o\x1b[0m\n'}
+[9.716005] (moveit_servo) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/moveit_servo_lib.dir/src/utilities.cpp.o\x1b[0m\n'}
+[9.716171] (moveit_servo) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/moveit_servo_lib.dir/src/servo_calcs.cpp.o\x1b[0m\n'}
+[9.734682] (-) TimerEvent: {}
+[9.835086] (-) TimerEvent: {}
+[9.935485] (-) TimerEvent: {}
+[9.964176] (moveit_servo) StdoutLine: {'line': b'[ 54%] \x1b[32m\x1b[1mLinking CXX shared library libservo_controller_input.so\x1b[0m\n'}
+[10.035676] (-) TimerEvent: {}
+[10.136122] (-) TimerEvent: {}
+[10.236591] (-) TimerEvent: {}
+[10.337033] (-) TimerEvent: {}
+[10.385934] (moveit_servo) StdoutLine: {'line': b'[ 54%] Built target servo_controller_input\n'}
+[10.437186] (-) TimerEvent: {}
+[10.537609] (-) TimerEvent: {}
+[10.638056] (-) TimerEvent: {}
+[10.738471] (-) TimerEvent: {}
+[10.838901] (-) TimerEvent: {}
+[10.939324] (-) TimerEvent: {}
+[11.039733] (-) TimerEvent: {}
+[11.140171] (-) TimerEvent: {}
+[11.240605] (-) TimerEvent: {}
+[11.341024] (-) TimerEvent: {}
+[11.441473] (-) TimerEvent: {}
+[11.541895] (-) TimerEvent: {}
+[11.642574] (-) TimerEvent: {}
+[11.743281] (-) TimerEvent: {}
+[11.843729] (-) TimerEvent: {}
+[11.944151] (-) TimerEvent: {}
+[12.044600] (-) TimerEvent: {}
+[12.145026] (-) TimerEvent: {}
+[12.245463] (-) TimerEvent: {}
+[12.345891] (-) TimerEvent: {}
+[12.446341] (-) TimerEvent: {}
+[12.546797] (-) TimerEvent: {}
+[12.647272] (-) TimerEvent: {}
+[12.747701] (-) TimerEvent: {}
+[12.848153] (-) TimerEvent: {}
+[12.948613] (-) TimerEvent: {}
+[13.049063] (-) TimerEvent: {}
+[13.149533] (-) TimerEvent: {}
+[13.249977] (-) TimerEvent: {}
+[13.350381] (-) TimerEvent: {}
+[13.398837] (moveit_servo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/ur5_simulation/src/moveit_servo/src/utilities.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kdouble moveit_servo::velocityScalingFactorForSingularity(const moveit::core::JointModelGroup*, const VectorXd&, const Eigen::JacobiSVD<Eigen::Matrix<double, -1, -1>, 2>&, const MatrixXd&, double, double, double, rclcpp::Clock&, moveit::core::RobotStatePtr&, moveit_servo::StatusCode&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[13.399186] (moveit_servo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/ur5_simulation/src/moveit_servo/src/utilities.cpp:92:57:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Khard_stop_singularity_threshold\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[13.399317] (moveit_servo) StderrLine: {'line': b'   92 |                                            \x1b[01;35m\x1b[Kconst double hard_stop_singularity_threshold\x1b[m\x1b[K,\n'}
+[13.399384] (moveit_servo) StderrLine: {'line': b'      |                                            \x1b[01;35m\x1b[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.399440] (moveit_servo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/ur5_simulation/src/moveit_servo/src/utilities.cpp:93:57:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Klower_singularity_threshold\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[13.399505] (moveit_servo) StderrLine: {'line': b'   93 |                                            \x1b[01;35m\x1b[Kconst double lower_singularity_threshold\x1b[m\x1b[K,\n'}
+[13.399559] (moveit_servo) StderrLine: {'line': b'      |                                            \x1b[01;35m\x1b[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.399612] (moveit_servo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/ur5_simulation/src/moveit_servo/src/utilities.cpp:94:57:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kleaving_singularity_threshold_multiplier\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[13.399665] (moveit_servo) StderrLine: {'line': b'   94 |                                            \x1b[01;35m\x1b[Kconst double leaving_singularity_threshold_multiplier\x1b[m\x1b[K, rclcpp::Clock& clock,\n'}
+[13.399719] (moveit_servo) StderrLine: {'line': b'      |                                            \x1b[01;35m\x1b[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.399773] (moveit_servo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/ur5_simulation/src/moveit_servo/src/utilities.cpp:94:114:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kclock\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[13.399827] (moveit_servo) StderrLine: {'line': b'   94 |                                            const double leaving_singularity_threshold_multiplier, \x1b[01;35m\x1b[Krclcpp::Clock& clock\x1b[m\x1b[K,\n'}
+[13.399886] (moveit_servo) StderrLine: {'line': b'      |                                                                                                   \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[13.399938] (moveit_servo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/ur5_simulation/src/moveit_servo/src/utilities.cpp:95:100:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kstatus\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[13.399995] (moveit_servo) StderrLine: {'line': b'   95 |                                            moveit::core::RobotStatePtr& current_state, \x1b[01;35m\x1b[KStatusCode& status\x1b[m\x1b[K)\n'}
+[13.400048] (moveit_servo) StderrLine: {'line': b'      |                                                                                        \x1b[01;35m\x1b[K~~~~~~~~~~~~^~~~~~\x1b[m\x1b[K\n'}
+[13.450517] (-) TimerEvent: {}
+[13.550946] (-) TimerEvent: {}
+[13.651376] (-) TimerEvent: {}
+[13.751783] (-) TimerEvent: {}
+[13.852178] (-) TimerEvent: {}
+[13.952606] (-) TimerEvent: {}
+[14.053054] (-) TimerEvent: {}
+[14.153517] (-) TimerEvent: {}
+[14.253979] (-) TimerEvent: {}
+[14.354398] (-) TimerEvent: {}
+[14.454842] (-) TimerEvent: {}
+[14.555297] (-) TimerEvent: {}
+[14.655737] (-) TimerEvent: {}
+[14.756184] (-) TimerEvent: {}
+[14.856600] (-) TimerEvent: {}
+[14.956998] (-) TimerEvent: {}
+[15.057448] (-) TimerEvent: {}
+[15.157881] (-) TimerEvent: {}
+[15.258315] (-) TimerEvent: {}
+[15.359217] (-) TimerEvent: {}
+[15.459656] (-) TimerEvent: {}
+[15.560095] (-) TimerEvent: {}
+[15.660523] (-) TimerEvent: {}
+[15.760955] (-) TimerEvent: {}
+[15.861382] (-) TimerEvent: {}
+[15.961789] (-) TimerEvent: {}
+[16.062177] (-) TimerEvent: {}
+[16.162606] (-) TimerEvent: {}
+[16.263009] (-) TimerEvent: {}
+[16.363439] (-) TimerEvent: {}
+[16.463868] (-) TimerEvent: {}
+[16.564374] (-) TimerEvent: {}
+[16.664797] (-) TimerEvent: {}
+[16.765191] (-) TimerEvent: {}
+[16.865614] (-) TimerEvent: {}
+[16.966023] (-) TimerEvent: {}
+[17.066459] (-) TimerEvent: {}
+[17.166878] (-) TimerEvent: {}
+[17.267319] (-) TimerEvent: {}
+[17.367749] (-) TimerEvent: {}
+[17.468182] (-) TimerEvent: {}
+[17.568600] (-) TimerEvent: {}
+[17.669042] (-) TimerEvent: {}
+[17.769497] (-) TimerEvent: {}
+[17.787493] (moveit_servo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/ur5_simulation/src/moveit_servo/src/servo_calcs.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool moveit_servo::ServoCalcs::internalServoUpdate(Eigen::ArrayXd&, trajectory_msgs::msg::JointTrajectory&, moveit_servo::ServoType)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[17.787802] (moveit_servo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/ur5_simulation/src/moveit_servo/src/servo_calcs.cpp:672:54:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kservo_type\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[17.787896] (moveit_servo) StderrLine: {'line': b'  672 |                                      \x1b[01;35m\x1b[Kconst ServoType servo_type\x1b[m\x1b[K)\n'}
+[17.787959] (moveit_servo) StderrLine: {'line': b'      |                                      \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~^~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.869631] (-) TimerEvent: {}
+[17.970068] (-) TimerEvent: {}
+[18.070521] (-) TimerEvent: {}
+[18.170954] (-) TimerEvent: {}
+[18.271365] (-) TimerEvent: {}
+[18.371738] (-) TimerEvent: {}
+[18.472186] (-) TimerEvent: {}
+[18.572592] (-) TimerEvent: {}
+[18.673011] (-) TimerEvent: {}
+[18.773447] (-) TimerEvent: {}
+[18.873857] (-) TimerEvent: {}
+[18.974273] (-) TimerEvent: {}
+[19.074655] (-) TimerEvent: {}
+[19.175066] (-) TimerEvent: {}
+[19.275539] (-) TimerEvent: {}
+[19.376161] (-) TimerEvent: {}
+[19.476536] (-) TimerEvent: {}
+[19.576909] (-) TimerEvent: {}
+[19.677223] (-) TimerEvent: {}
+[19.777568] (-) TimerEvent: {}
+[19.878056] (-) TimerEvent: {}
+[19.978720] (-) TimerEvent: {}
+[20.079165] (-) TimerEvent: {}
+[20.179612] (-) TimerEvent: {}
+[20.280010] (-) TimerEvent: {}
+[20.380531] (-) TimerEvent: {}
+[20.480926] (-) TimerEvent: {}
+[20.581454] (-) TimerEvent: {}
+[20.681897] (-) TimerEvent: {}
+[20.782422] (-) TimerEvent: {}
+[20.882867] (-) TimerEvent: {}
+[20.983356] (-) TimerEvent: {}
+[21.083887] (-) TimerEvent: {}
+[21.184447] (-) TimerEvent: {}
+[21.284936] (-) TimerEvent: {}
+[21.385344] (-) TimerEvent: {}
+[21.485809] (-) TimerEvent: {}
+[21.586219] (-) TimerEvent: {}
+[21.686733] (-) TimerEvent: {}
+[21.787181] (-) TimerEvent: {}
+[21.887599] (-) TimerEvent: {}
+[21.988092] (-) TimerEvent: {}
+[22.088570] (-) TimerEvent: {}
+[22.189102] (-) TimerEvent: {}
+[22.289601] (-) TimerEvent: {}
+[22.390065] (-) TimerEvent: {}
+[22.490549] (-) TimerEvent: {}
+[22.591067] (-) TimerEvent: {}
+[22.691579] (-) TimerEvent: {}
+[22.792123] (-) TimerEvent: {}
+[22.892550] (-) TimerEvent: {}
+[22.993025] (-) TimerEvent: {}
+[23.093475] (-) TimerEvent: {}
+[23.193914] (-) TimerEvent: {}
+[23.294414] (-) TimerEvent: {}
+[23.394906] (-) TimerEvent: {}
+[23.495427] (-) TimerEvent: {}
+[23.595882] (-) TimerEvent: {}
+[23.696342] (-) TimerEvent: {}
+[23.796892] (-) TimerEvent: {}
+[23.897403] (-) TimerEvent: {}
+[23.997898] (-) TimerEvent: {}
+[24.098410] (-) TimerEvent: {}
+[24.198995] (-) TimerEvent: {}
+[24.299433] (-) TimerEvent: {}
+[24.399852] (-) TimerEvent: {}
+[24.500259] (-) TimerEvent: {}
+[24.600668] (-) TimerEvent: {}
+[24.701072] (-) TimerEvent: {}
+[24.801494] (-) TimerEvent: {}
+[24.901917] (-) TimerEvent: {}
+[25.002445] (-) TimerEvent: {}
+[25.102939] (-) TimerEvent: {}
+[25.203329] (-) TimerEvent: {}
+[25.303671] (-) TimerEvent: {}
+[25.403982] (-) TimerEvent: {}
+[25.504336] (-) TimerEvent: {}
+[25.604695] (-) TimerEvent: {}
+[25.705055] (-) TimerEvent: {}
+[25.805411] (-) TimerEvent: {}
+[25.905779] (-) TimerEvent: {}
+[26.006186] (-) TimerEvent: {}
+[26.106575] (-) TimerEvent: {}
+[26.206946] (-) TimerEvent: {}
+[26.307353] (-) TimerEvent: {}
+[26.407752] (-) TimerEvent: {}
+[26.508140] (-) TimerEvent: {}
+[26.608534] (-) TimerEvent: {}
+[26.708994] (-) TimerEvent: {}
+[26.809482] (-) TimerEvent: {}
+[26.909988] (-) TimerEvent: {}
+[27.010469] (-) TimerEvent: {}
+[27.110952] (-) TimerEvent: {}
+[27.211358] (-) TimerEvent: {}
+[27.311738] (-) TimerEvent: {}
+[27.412134] (-) TimerEvent: {}
+[27.512526] (-) TimerEvent: {}
+[27.612985] (-) TimerEvent: {}
+[27.713482] (-) TimerEvent: {}
+[27.814024] (-) TimerEvent: {}
+[27.914510] (-) TimerEvent: {}
+[28.014869] (-) TimerEvent: {}
+[28.115253] (-) TimerEvent: {}
+[28.215639] (-) TimerEvent: {}
+[28.316015] (-) TimerEvent: {}
+[28.416412] (-) TimerEvent: {}
+[28.516850] (-) TimerEvent: {}
+[28.617246] (-) TimerEvent: {}
+[28.717638] (-) TimerEvent: {}
+[28.818022] (-) TimerEvent: {}
+[28.918432] (-) TimerEvent: {}
+[29.018816] (-) TimerEvent: {}
+[29.119200] (-) TimerEvent: {}
+[29.219586] (-) TimerEvent: {}
+[29.319978] (-) TimerEvent: {}
+[29.420402] (-) TimerEvent: {}
+[29.520783] (-) TimerEvent: {}
+[29.621178] (-) TimerEvent: {}
+[29.721584] (-) TimerEvent: {}
+[29.821980] (-) TimerEvent: {}
+[29.922396] (-) TimerEvent: {}
+[30.022763] (-) TimerEvent: {}
+[30.123133] (-) TimerEvent: {}
+[30.223502] (-) TimerEvent: {}
+[30.323864] (-) TimerEvent: {}
+[30.424240] (-) TimerEvent: {}
+[30.524617] (-) TimerEvent: {}
+[30.624985] (-) TimerEvent: {}
+[30.725372] (-) TimerEvent: {}
+[30.825795] (-) TimerEvent: {}
+[30.926173] (-) TimerEvent: {}
+[31.026552] (-) TimerEvent: {}
+[31.126914] (-) TimerEvent: {}
+[31.227382] (-) TimerEvent: {}
+[31.327865] (-) TimerEvent: {}
+[31.428328] (-) TimerEvent: {}
+[31.528816] (-) TimerEvent: {}
+[31.629292] (-) TimerEvent: {}
+[31.729755] (-) TimerEvent: {}
+[31.830232] (-) TimerEvent: {}
+[31.844241] (moveit_servo) StdoutLine: {'line': b'[ 57%] \x1b[32m\x1b[1mLinking CXX executable test_servo_collision\x1b[0m\n'}
+[31.930377] (-) TimerEvent: {}
+[32.030808] (-) TimerEvent: {}
+[32.131225] (-) TimerEvent: {}
+[32.136985] (moveit_servo) StdoutLine: {'line': b'[ 57%] Built target test_servo_collision\n'}
+[32.231367] (-) TimerEvent: {}
+[32.331859] (-) TimerEvent: {}
+[32.432304] (-) TimerEvent: {}
+[32.532723] (-) TimerEvent: {}
+[32.633165] (-) TimerEvent: {}
+[32.733606] (-) TimerEvent: {}
+[32.834024] (-) TimerEvent: {}
+[32.934483] (-) TimerEvent: {}
+[33.034928] (-) TimerEvent: {}
+[33.135359] (-) TimerEvent: {}
+[33.235797] (-) TimerEvent: {}
+[33.336245] (-) TimerEvent: {}
+[33.436680] (-) TimerEvent: {}
+[33.537116] (-) TimerEvent: {}
+[33.637540] (-) TimerEvent: {}
+[33.737952] (-) TimerEvent: {}
+[33.838408] (-) TimerEvent: {}
+[33.938923] (-) TimerEvent: {}
+[34.039358] (-) TimerEvent: {}
+[34.139776] (-) TimerEvent: {}
+[34.240181] (-) TimerEvent: {}
+[34.340636] (-) TimerEvent: {}
+[34.441140] (-) TimerEvent: {}
+[34.541624] (-) TimerEvent: {}
+[34.642129] (-) TimerEvent: {}
+[34.742609] (-) TimerEvent: {}
+[34.843101] (-) TimerEvent: {}
+[34.943603] (-) TimerEvent: {}
+[35.044138] (-) TimerEvent: {}
+[35.144616] (-) TimerEvent: {}
+[35.245106] (-) TimerEvent: {}
+[35.345606] (-) TimerEvent: {}
+[35.446127] (-) TimerEvent: {}
+[35.546615] (-) TimerEvent: {}
+[35.647140] (-) TimerEvent: {}
+[35.747617] (-) TimerEvent: {}
+[35.848084] (-) TimerEvent: {}
+[35.948538] (-) TimerEvent: {}
+[36.048955] (-) TimerEvent: {}
+[36.149376] (-) TimerEvent: {}
+[36.249805] (-) TimerEvent: {}
+[36.350198] (-) TimerEvent: {}
+[36.450612] (-) TimerEvent: {}
+[36.551063] (-) TimerEvent: {}
+[36.651459] (-) TimerEvent: {}
+[36.751834] (-) TimerEvent: {}
+[36.852262] (-) TimerEvent: {}
+[36.952698] (-) TimerEvent: {}
+[37.053153] (-) TimerEvent: {}
+[37.153593] (-) TimerEvent: {}
+[37.254041] (-) TimerEvent: {}
+[37.354519] (-) TimerEvent: {}
+[37.454994] (-) TimerEvent: {}
+[37.555488] (-) TimerEvent: {}
+[37.605848] (moveit_servo) StdoutLine: {'line': b'[ 60%] \x1b[32m\x1b[1mLinking CXX executable test_servo_integration\x1b[0m\n'}
+[37.655641] (-) TimerEvent: {}
+[37.756169] (-) TimerEvent: {}
+[37.856565] (-) TimerEvent: {}
+[37.913351] (moveit_servo) StdoutLine: {'line': b'[ 60%] Built target test_servo_integration\n'}
+[37.956644] (-) TimerEvent: {}
+[38.056901] (-) TimerEvent: {}
+[38.157119] (-) TimerEvent: {}
+[38.257377] (-) TimerEvent: {}
+[38.357648] (-) TimerEvent: {}
+[38.457839] (-) TimerEvent: {}
+[38.558022] (-) TimerEvent: {}
+[38.658210] (-) TimerEvent: {}
+[38.758379] (-) TimerEvent: {}
+[38.858556] (-) TimerEvent: {}
+[38.958777] (-) TimerEvent: {}
+[39.058994] (-) TimerEvent: {}
+[39.159349] (-) TimerEvent: {}
+[39.259771] (-) TimerEvent: {}
+[39.360135] (-) TimerEvent: {}
+[39.460523] (-) TimerEvent: {}
+[39.560901] (-) TimerEvent: {}
+[39.661283] (-) TimerEvent: {}
+[39.761657] (-) TimerEvent: {}
+[39.862031] (-) TimerEvent: {}
+[39.962421] (-) TimerEvent: {}
+[40.062791] (-) TimerEvent: {}
+[40.163162] (-) TimerEvent: {}
+[40.263508] (-) TimerEvent: {}
+[40.363862] (-) TimerEvent: {}
+[40.464260] (-) TimerEvent: {}
+[40.564602] (-) TimerEvent: {}
+[40.664969] (-) TimerEvent: {}
+[40.765349] (-) TimerEvent: {}
+[40.865707] (-) TimerEvent: {}
+[40.966057] (-) TimerEvent: {}
+[41.066439] (-) TimerEvent: {}
+[41.166811] (-) TimerEvent: {}
+[41.267168] (-) TimerEvent: {}
+[41.367493] (-) TimerEvent: {}
+[41.467691] (-) TimerEvent: {}
+[41.567886] (-) TimerEvent: {}
+[41.668131] (-) TimerEvent: {}
+[41.768459] (-) TimerEvent: {}
+[41.868769] (-) TimerEvent: {}
+[41.969028] (-) TimerEvent: {}
+[42.069457] (-) TimerEvent: {}
+[42.169812] (-) TimerEvent: {}
+[42.270187] (-) TimerEvent: {}
+[42.370554] (-) TimerEvent: {}
+[42.470920] (-) TimerEvent: {}
+[42.571306] (-) TimerEvent: {}
+[42.671667] (-) TimerEvent: {}
+[42.772032] (-) TimerEvent: {}
+[42.872404] (-) TimerEvent: {}
+[42.972746] (-) TimerEvent: {}
+[43.073043] (-) TimerEvent: {}
+[43.173349] (-) TimerEvent: {}
+[43.273706] (-) TimerEvent: {}
+[43.374046] (-) TimerEvent: {}
+[43.474475] (-) TimerEvent: {}
+[43.574913] (-) TimerEvent: {}
+[43.675293] (-) TimerEvent: {}
+[43.775638] (-) TimerEvent: {}
+[43.875956] (-) TimerEvent: {}
+[43.976229] (-) TimerEvent: {}
+[44.076475] (-) TimerEvent: {}
+[44.176776] (-) TimerEvent: {}
+[44.277180] (-) TimerEvent: {}
+[44.377543] (-) TimerEvent: {}
+[44.477902] (-) TimerEvent: {}
+[44.578276] (-) TimerEvent: {}
+[44.678679] (-) TimerEvent: {}
+[44.779114] (-) TimerEvent: {}
+[44.879494] (-) TimerEvent: {}
+[44.979853] (-) TimerEvent: {}
+[45.080268] (-) TimerEvent: {}
+[45.180724] (-) TimerEvent: {}
+[45.281112] (-) TimerEvent: {}
+[45.381493] (-) TimerEvent: {}
+[45.481856] (-) TimerEvent: {}
+[45.582246] (-) TimerEvent: {}
+[45.682663] (-) TimerEvent: {}
+[45.783071] (-) TimerEvent: {}
+[45.883447] (-) TimerEvent: {}
+[45.983856] (-) TimerEvent: {}
+[46.084299] (-) TimerEvent: {}
+[46.184658] (-) TimerEvent: {}
+[46.285008] (-) TimerEvent: {}
+[46.385315] (-) TimerEvent: {}
+[46.485575] (-) TimerEvent: {}
+[46.585910] (-) TimerEvent: {}
+[46.686247] (-) TimerEvent: {}
+[46.786578] (-) TimerEvent: {}
+[46.886851] (-) TimerEvent: {}
+[46.987155] (-) TimerEvent: {}
+[47.087454] (-) TimerEvent: {}
+[47.187751] (-) TimerEvent: {}
+[47.288101] (-) TimerEvent: {}
+[47.388418] (-) TimerEvent: {}
+[47.488778] (-) TimerEvent: {}
+[47.589157] (-) TimerEvent: {}
+[47.689516] (-) TimerEvent: {}
+[47.789874] (-) TimerEvent: {}
+[47.890230] (-) TimerEvent: {}
+[47.990597] (-) TimerEvent: {}
+[48.090964] (-) TimerEvent: {}
+[48.191487] (-) TimerEvent: {}
+[48.291843] (-) TimerEvent: {}
+[48.392200] (-) TimerEvent: {}
+[48.492607] (-) TimerEvent: {}
+[48.593035] (-) TimerEvent: {}
+[48.693439] (-) TimerEvent: {}
+[48.793808] (-) TimerEvent: {}
+[48.853463] (moveit_servo) StdoutLine: {'line': b'[ 63%] \x1b[32m\x1b[1mLinking CXX shared library libmoveit_servo_lib.so\x1b[0m\n'}
+[48.893968] (-) TimerEvent: {}
+[48.994447] (-) TimerEvent: {}
+[49.094887] (-) TimerEvent: {}
+[49.132309] (moveit_servo) StdoutLine: {'line': b'[ 63%] Built target moveit_servo_lib\n'}
+[49.152223] (moveit_servo) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/pose_tracking.dir/src/pose_tracking.cpp.o\x1b[0m\n'}
+[49.152920] (moveit_servo) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/servo_calcs_unit_tests.dir/test/servo_calcs_unit_tests.cpp.o\x1b[0m\n'}
+[49.153010] (moveit_servo) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/servo_node.dir/src/servo_node.cpp.o\x1b[0m\n'}
+[49.195029] (-) TimerEvent: {}
+[49.295449] (-) TimerEvent: {}
+[49.395844] (-) TimerEvent: {}
+[49.496301] (-) TimerEvent: {}
+[49.596777] (-) TimerEvent: {}
+[49.697267] (-) TimerEvent: {}
+[49.797731] (-) TimerEvent: {}
+[49.898187] (-) TimerEvent: {}
+[49.998646] (-) TimerEvent: {}
+[50.099105] (-) TimerEvent: {}
+[50.199586] (-) TimerEvent: {}
+[50.300038] (-) TimerEvent: {}
+[50.400478] (-) TimerEvent: {}
+[50.500966] (-) TimerEvent: {}
+[50.601484] (-) TimerEvent: {}
+[50.701985] (-) TimerEvent: {}
+[50.802486] (-) TimerEvent: {}
+[50.902948] (-) TimerEvent: {}
+[51.003426] (-) TimerEvent: {}
+[51.103904] (-) TimerEvent: {}
+[51.204355] (-) TimerEvent: {}
+[51.304804] (-) TimerEvent: {}
+[51.405261] (-) TimerEvent: {}
+[51.505726] (-) TimerEvent: {}
+[51.606204] (-) TimerEvent: {}
+[51.706682] (-) TimerEvent: {}
+[51.807202] (-) TimerEvent: {}
+[51.907709] (-) TimerEvent: {}
+[52.008199] (-) TimerEvent: {}
+[52.108695] (-) TimerEvent: {}
+[52.209179] (-) TimerEvent: {}
+[52.309680] (-) TimerEvent: {}
+[52.410196] (-) TimerEvent: {}
+[52.510665] (-) TimerEvent: {}
+[52.611316] (-) TimerEvent: {}
+[52.711732] (-) TimerEvent: {}
+[52.812127] (-) TimerEvent: {}
+[52.912512] (-) TimerEvent: {}
+[53.012901] (-) TimerEvent: {}
+[53.113368] (-) TimerEvent: {}
+[53.213880] (-) TimerEvent: {}
+[53.314408] (-) TimerEvent: {}
+[53.414878] (-) TimerEvent: {}
+[53.515322] (-) TimerEvent: {}
+[53.615763] (-) TimerEvent: {}
+[53.716220] (-) TimerEvent: {}
+[53.816693] (-) TimerEvent: {}
+[53.917198] (-) TimerEvent: {}
+[54.017689] (-) TimerEvent: {}
+[54.118190] (-) TimerEvent: {}
+[54.218720] (-) TimerEvent: {}
+[54.319219] (-) TimerEvent: {}
+[54.419727] (-) TimerEvent: {}
+[54.520239] (-) TimerEvent: {}
+[54.620787] (-) TimerEvent: {}
+[54.721346] (-) TimerEvent: {}
+[54.821874] (-) TimerEvent: {}
+[54.922362] (-) TimerEvent: {}
+[55.022887] (-) TimerEvent: {}
+[55.123355] (-) TimerEvent: {}
+[55.223824] (-) TimerEvent: {}
+[55.324336] (-) TimerEvent: {}
+[55.424822] (-) TimerEvent: {}
+[55.525354] (-) TimerEvent: {}
+[55.625728] (-) TimerEvent: {}
+[55.726119] (-) TimerEvent: {}
+[55.826488] (-) TimerEvent: {}
+[55.926862] (-) TimerEvent: {}
+[56.027327] (-) TimerEvent: {}
+[56.127705] (-) TimerEvent: {}
+[56.228066] (-) TimerEvent: {}
+[56.328404] (-) TimerEvent: {}
+[56.428791] (-) TimerEvent: {}
+[56.529156] (-) TimerEvent: {}
+[56.629526] (-) TimerEvent: {}
+[56.729877] (-) TimerEvent: {}
+[56.830245] (-) TimerEvent: {}
+[56.930650] (-) TimerEvent: {}
+[57.031141] (-) TimerEvent: {}
+[57.131590] (-) TimerEvent: {}
+[57.232007] (-) TimerEvent: {}
+[57.332593] (-) TimerEvent: {}
+[57.433058] (-) TimerEvent: {}
+[57.533548] (-) TimerEvent: {}
+[57.634093] (-) TimerEvent: {}
+[57.734466] (-) TimerEvent: {}
+[57.834836] (-) TimerEvent: {}
+[57.935184] (-) TimerEvent: {}
+[58.035594] (-) TimerEvent: {}
+[58.136046] (-) TimerEvent: {}
+[58.236539] (-) TimerEvent: {}
+[58.336984] (-) TimerEvent: {}
+[58.388852] (moveit_servo) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX shared library libservo_node.so\x1b[0m\n'}
+[58.437173] (-) TimerEvent: {}
+[58.537609] (-) TimerEvent: {}
+[58.573548] (moveit_servo) StdoutLine: {'line': b'[ 75%] Built target servo_node\n'}
+[58.598035] (moveit_servo) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object CMakeFiles/servo_node_main.dir/src/servo_node_main.cpp.o\x1b[0m\n'}
+[58.637738] (-) TimerEvent: {}
+[58.738156] (-) TimerEvent: {}
+[58.838534] (-) TimerEvent: {}
+[58.938930] (-) TimerEvent: {}
+[59.039336] (-) TimerEvent: {}
+[59.139733] (-) TimerEvent: {}
+[59.240139] (-) TimerEvent: {}
+[59.340555] (-) TimerEvent: {}
+[59.441093] (-) TimerEvent: {}
+[59.541575] (-) TimerEvent: {}
+[59.642052] (-) TimerEvent: {}
+[59.742550] (-) TimerEvent: {}
+[59.843057] (-) TimerEvent: {}
+[59.943474] (-) TimerEvent: {}
+[60.043893] (-) TimerEvent: {}
+[60.144374] (-) TimerEvent: {}
+[60.244892] (-) TimerEvent: {}
+[60.345372] (-) TimerEvent: {}
+[60.445867] (-) TimerEvent: {}
+[60.546360] (-) TimerEvent: {}
+[60.646849] (-) TimerEvent: {}
+[60.747357] (-) TimerEvent: {}
+[60.847860] (-) TimerEvent: {}
+[60.948351] (-) TimerEvent: {}
+[61.048842] (-) TimerEvent: {}
+[61.149340] (-) TimerEvent: {}
+[61.249837] (-) TimerEvent: {}
+[61.350312] (-) TimerEvent: {}
+[61.450786] (-) TimerEvent: {}
+[61.551249] (-) TimerEvent: {}
+[61.651634] (-) TimerEvent: {}
+[61.752033] (-) TimerEvent: {}
+[61.852664] (-) TimerEvent: {}
+[61.953126] (-) TimerEvent: {}
+[62.053591] (-) TimerEvent: {}
+[62.154049] (-) TimerEvent: {}
+[62.254608] (-) TimerEvent: {}
+[62.355072] (-) TimerEvent: {}
+[62.455535] (-) TimerEvent: {}
+[62.556012] (-) TimerEvent: {}
+[62.656569] (-) TimerEvent: {}
+[62.757028] (-) TimerEvent: {}
+[62.857526] (-) TimerEvent: {}
+[62.957999] (-) TimerEvent: {}
+[63.058480] (-) TimerEvent: {}
+[63.158969] (-) TimerEvent: {}
+[63.259424] (-) TimerEvent: {}
+[63.359864] (-) TimerEvent: {}
+[63.460346] (-) TimerEvent: {}
+[63.560784] (-) TimerEvent: {}
+[63.661397] (-) TimerEvent: {}
+[63.761968] (-) TimerEvent: {}
+[63.862470] (-) TimerEvent: {}
+[63.962912] (-) TimerEvent: {}
+[64.063357] (-) TimerEvent: {}
+[64.163803] (-) TimerEvent: {}
+[64.264289] (-) TimerEvent: {}
+[64.364770] (-) TimerEvent: {}
+[64.465211] (-) TimerEvent: {}
+[64.565663] (-) TimerEvent: {}
+[64.666090] (-) TimerEvent: {}
+[64.742243] (moveit_servo) StdoutLine: {'line': b'[ 81%] \x1b[32m\x1b[1mLinking CXX shared library libpose_tracking.so\x1b[0m\n'}
+[64.766174] (-) TimerEvent: {}
+[64.866582] (-) TimerEvent: {}
+[64.952304] (moveit_servo) StdoutLine: {'line': b'[ 81%] Built target pose_tracking\n'}
+[64.966719] (-) TimerEvent: {}
+[64.973793] (moveit_servo) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding CXX object CMakeFiles/test_servo_pose_tracking.dir/test/pose_tracking_test.cpp.o\x1b[0m\n'}
+[64.974471] (moveit_servo) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding CXX object CMakeFiles/servo_pose_tracking_demo.dir/src/cpp_interface_demo/pose_tracking_demo.cpp.o\x1b[0m\n'}
+[65.066870] (-) TimerEvent: {}
+[65.167340] (-) TimerEvent: {}
+[65.267793] (-) TimerEvent: {}
+[65.368287] (-) TimerEvent: {}
+[65.468774] (-) TimerEvent: {}
+[65.569250] (-) TimerEvent: {}
+[65.669688] (-) TimerEvent: {}
+[65.770161] (-) TimerEvent: {}
+[65.870622] (-) TimerEvent: {}
+[65.971069] (-) TimerEvent: {}
+[66.071540] (-) TimerEvent: {}
+[66.171976] (-) TimerEvent: {}
+[66.272448] (-) TimerEvent: {}
+[66.372903] (-) TimerEvent: {}
+[66.473447] (-) TimerEvent: {}
+[66.474119] (moveit_servo) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking CXX executable servo_node_main\x1b[0m\n'}
+[66.573608] (-) TimerEvent: {}
+[66.674171] (-) TimerEvent: {}
+[66.720226] (moveit_servo) StdoutLine: {'line': b'[ 90%] Built target servo_node_main\n'}
+[66.765677] (moveit_servo) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking CXX executable servo_calcs_unit_tests\x1b[0m\n'}
+[66.774260] (-) TimerEvent: {}
+[66.874612] (-) TimerEvent: {}
+[66.974994] (-) TimerEvent: {}
+[67.065658] (moveit_servo) StdoutLine: {'line': b'[ 93%] Built target servo_calcs_unit_tests\n'}
+[67.075135] (-) TimerEvent: {}
+[67.175502] (-) TimerEvent: {}
+[67.275917] (-) TimerEvent: {}
+[67.376389] (-) TimerEvent: {}
+[67.476748] (-) TimerEvent: {}
+[67.577152] (-) TimerEvent: {}
+[67.677549] (-) TimerEvent: {}
+[67.778049] (-) TimerEvent: {}
+[67.878522] (-) TimerEvent: {}
+[67.978946] (-) TimerEvent: {}
+[68.079338] (-) TimerEvent: {}
+[68.179733] (-) TimerEvent: {}
+[68.280181] (-) TimerEvent: {}
+[68.380628] (-) TimerEvent: {}
+[68.481129] (-) TimerEvent: {}
+[68.581601] (-) TimerEvent: {}
+[68.682002] (-) TimerEvent: {}
+[68.782422] (-) TimerEvent: {}
+[68.882814] (-) TimerEvent: {}
+[68.983224] (-) TimerEvent: {}
+[69.083619] (-) TimerEvent: {}
+[69.184014] (-) TimerEvent: {}
+[69.284455] (-) TimerEvent: {}
+[69.384867] (-) TimerEvent: {}
+[69.485321] (-) TimerEvent: {}
+[69.585751] (-) TimerEvent: {}
+[69.686188] (-) TimerEvent: {}
+[69.786653] (-) TimerEvent: {}
+[69.887115] (-) TimerEvent: {}
+[69.987671] (-) TimerEvent: {}
+[70.088118] (-) TimerEvent: {}
+[70.188620] (-) TimerEvent: {}
+[70.289105] (-) TimerEvent: {}
+[70.389566] (-) TimerEvent: {}
+[70.490037] (-) TimerEvent: {}
+[70.590476] (-) TimerEvent: {}
+[70.690833] (-) TimerEvent: {}
+[70.791222] (-) TimerEvent: {}
+[70.891679] (-) TimerEvent: {}
+[70.992163] (-) TimerEvent: {}
+[71.092649] (-) TimerEvent: {}
+[71.193042] (-) TimerEvent: {}
+[71.293459] (-) TimerEvent: {}
+[71.393942] (-) TimerEvent: {}
+[71.494437] (-) TimerEvent: {}
+[71.594971] (-) TimerEvent: {}
+[71.695463] (-) TimerEvent: {}
+[71.795924] (-) TimerEvent: {}
+[71.896445] (-) TimerEvent: {}
+[71.996913] (-) TimerEvent: {}
+[72.097380] (-) TimerEvent: {}
+[72.197742] (-) TimerEvent: {}
+[72.298139] (-) TimerEvent: {}
+[72.398520] (-) TimerEvent: {}
+[72.498912] (-) TimerEvent: {}
+[72.599318] (-) TimerEvent: {}
+[72.699746] (-) TimerEvent: {}
+[72.800161] (-) TimerEvent: {}
+[72.900546] (-) TimerEvent: {}
+[73.000945] (-) TimerEvent: {}
+[73.101355] (-) TimerEvent: {}
+[73.201751] (-) TimerEvent: {}
+[73.302155] (-) TimerEvent: {}
+[73.402540] (-) TimerEvent: {}
+[73.502932] (-) TimerEvent: {}
+[73.603362] (-) TimerEvent: {}
+[73.703818] (-) TimerEvent: {}
+[73.804165] (-) TimerEvent: {}
+[73.904543] (-) TimerEvent: {}
+[74.004937] (-) TimerEvent: {}
+[74.105341] (-) TimerEvent: {}
+[74.205739] (-) TimerEvent: {}
+[74.306147] (-) TimerEvent: {}
+[74.406543] (-) TimerEvent: {}
+[74.506936] (-) TimerEvent: {}
+[74.607351] (-) TimerEvent: {}
+[74.707756] (-) TimerEvent: {}
+[74.808160] (-) TimerEvent: {}
+[74.908549] (-) TimerEvent: {}
+[75.008952] (-) TimerEvent: {}
+[75.109358] (-) TimerEvent: {}
+[75.209751] (-) TimerEvent: {}
+[75.310142] (-) TimerEvent: {}
+[75.410543] (-) TimerEvent: {}
+[75.510916] (-) TimerEvent: {}
+[75.611337] (-) TimerEvent: {}
+[75.711705] (-) TimerEvent: {}
+[75.812095] (-) TimerEvent: {}
+[75.912503] (-) TimerEvent: {}
+[76.012936] (-) TimerEvent: {}
+[76.113328] (-) TimerEvent: {}
+[76.213694] (-) TimerEvent: {}
+[76.314061] (-) TimerEvent: {}
+[76.414447] (-) TimerEvent: {}
+[76.514832] (-) TimerEvent: {}
+[76.615209] (-) TimerEvent: {}
+[76.715588] (-) TimerEvent: {}
+[76.815962] (-) TimerEvent: {}
+[76.916342] (-) TimerEvent: {}
+[77.016716] (-) TimerEvent: {}
+[77.117144] (-) TimerEvent: {}
+[77.217557] (-) TimerEvent: {}
+[77.317994] (-) TimerEvent: {}
+[77.418413] (-) TimerEvent: {}
+[77.518839] (-) TimerEvent: {}
+[77.619258] (-) TimerEvent: {}
+[77.719668] (-) TimerEvent: {}
+[77.820118] (-) TimerEvent: {}
+[77.920537] (-) TimerEvent: {}
+[78.020963] (-) TimerEvent: {}
+[78.115021] (moveit_servo) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking CXX executable servo_pose_tracking_demo\x1b[0m\n'}
+[78.121029] (-) TimerEvent: {}
+[78.221347] (-) TimerEvent: {}
+[78.321715] (-) TimerEvent: {}
+[78.419504] (moveit_servo) StdoutLine: {'line': b'[ 96%] Built target servo_pose_tracking_demo\n'}
+[78.421779] (-) TimerEvent: {}
+[78.522113] (-) TimerEvent: {}
+[78.622540] (-) TimerEvent: {}
+[78.722900] (-) TimerEvent: {}
+[78.823255] (-) TimerEvent: {}
+[78.923610] (-) TimerEvent: {}
+[79.023965] (-) TimerEvent: {}
+[79.124535] (-) TimerEvent: {}
+[79.224971] (-) TimerEvent: {}
+[79.325389] (-) TimerEvent: {}
+[79.425612] (-) TimerEvent: {}
+[79.525799] (-) TimerEvent: {}
+[79.626102] (-) TimerEvent: {}
+[79.726454] (-) TimerEvent: {}
+[79.826815] (-) TimerEvent: {}
+[79.927201] (-) TimerEvent: {}
+[79.988762] (moveit_servo) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable test_servo_pose_tracking\x1b[0m\n'}
+[80.027316] (-) TimerEvent: {}
+[80.127682] (-) TimerEvent: {}
+[80.228055] (-) TimerEvent: {}
+[80.318395] (moveit_servo) StdoutLine: {'line': b'[100%] Built target test_servo_pose_tracking\n'}
+[80.328147] (-) TimerEvent: {}
+[80.330370] (moveit_servo) CommandEnded: {'returncode': 0}
+[80.331327] (moveit_servo) JobProgress: {'identifier': 'moveit_servo', 'progress': 'install'}
+[80.338624] (moveit_servo) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/robot/ur5_simulation/build/moveit_servo'], 'cwd': '/home/robot/ur5_simulation/build/moveit_servo', 'env': OrderedDict([('LIBRARY_PATH', '/usr/local/cuda-12.8/lib64:'), ('HTTPS_PROXY', 'http://127.0.0.1:7897/'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'robot'), ('no_proxy', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,172.29.0.0/16,::1'), ('all_proxy', 'socks://127.0.0.1:7897/'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/lib:/usr/local/cuda-12.8/lib64:'), ('OLDPWD', '/home/robot'), ('HOME', '/home/robot'), ('LESS', '-R'), ('CONDA_SHLVL', '0'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,172.29.0.0/16,::1'), ('ZSH', '/home/robot/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('SYSTEMD_EXEC_PID', '13457'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WAYLAND_DISPLAY', 'wayland-0'), ('https_proxy', 'http://127.0.0.1:7897/'), ('ROS_DISTRO', 'humble'), ('ALL_PROXY', 'socks://127.0.0.1:7897/'), ('LOGNAME', 'robot'), ('http_proxy', 'http://127.0.0.1:7897/'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USERNAME', 'robot'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/cuda-12.8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/robot-ThinkBook-16-G6-IMH:@/tmp/.ICE-unix/1792,unix/robot-ThinkBook-16-G6-IMH:/tmp/.ICE-unix/1792'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4b7b1f0c_2d46_44da_86a0_b7417178ec36'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.154'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.39F6A3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ROS_DOMAIN_ID', '1'), ('SHELL', '/usr/bin/zsh'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/robot/ur5_simulation/build/moveit_servo'), ('XDG_DATA_DIRS', '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('HTTP_PROXY', 'http://127.0.0.1:7897/'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble:')]), 'shell': False}
+[80.346330] (moveit_servo) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[80.346483] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/robot/ur5_simulation/install/moveit_servo/lib/libmoveit_servo_lib.so.2.5.7\n'}
+[80.348132] (moveit_servo) StdoutLine: {'line': b'-- Set runtime path of "/home/robot/ur5_simulation/install/moveit_servo/lib/libmoveit_servo_lib.so.2.5.7" to ""\n'}
+[80.348244] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/robot/ur5_simulation/install/moveit_servo/lib/libmoveit_servo_lib.so\n'}
+[80.348323] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/robot/ur5_simulation/install/moveit_servo/lib/libmoveit_servo_lib_parameters.so.2.5.7\n'}
+[80.348415] (moveit_servo) StdoutLine: {'line': b'-- Set runtime path of "/home/robot/ur5_simulation/install/moveit_servo/lib/libmoveit_servo_lib_parameters.so.2.5.7" to ""\n'}
+[80.348477] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/robot/ur5_simulation/install/moveit_servo/lib/libmoveit_servo_lib_parameters.so\n'}
+[80.348538] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/robot/ur5_simulation/install/moveit_servo/lib/libpose_tracking.so\n'}
+[80.349067] (moveit_servo) StdoutLine: {'line': b'-- Set runtime path of "/home/robot/ur5_simulation/install/moveit_servo/lib/libpose_tracking.so" to ""\n'}
+[80.349150] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/robot/ur5_simulation/install/moveit_servo/lib/libservo_node.so\n'}
+[80.349280] (moveit_servo) StdoutLine: {'line': b'-- Set runtime path of "/home/robot/ur5_simulation/install/moveit_servo/lib/libservo_node.so" to ""\n'}
+[80.349371] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/robot/ur5_simulation/install/moveit_servo/lib/libservo_controller_input.so\n'}
+[80.349984] (moveit_servo) StdoutLine: {'line': b'-- Set runtime path of "/home/robot/ur5_simulation/install/moveit_servo/lib/libservo_controller_input.so" to ""\n'}
+[80.350081] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/robot/ur5_simulation/install/moveit_servo/lib/moveit_servo/servo_node_main\n'}
+[80.350247] (moveit_servo) StdoutLine: {'line': b'-- Set runtime path of "/home/robot/ur5_simulation/install/moveit_servo/lib/moveit_servo/servo_node_main" to ""\n'}
+[80.350291] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/robot/ur5_simulation/install/moveit_servo/lib/moveit_servo/servo_pose_tracking_demo\n'}
+[80.350747] (moveit_servo) StdoutLine: {'line': b'-- Set runtime path of "/home/robot/ur5_simulation/install/moveit_servo/lib/moveit_servo/servo_pose_tracking_demo" to ""\n'}
+[80.350807] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/robot/ur5_simulation/install/moveit_servo/lib/moveit_servo/fake_command_publisher\n'}
+[80.350985] (moveit_servo) StdoutLine: {'line': b'-- Set runtime path of "/home/robot/ur5_simulation/install/moveit_servo/lib/moveit_servo/fake_command_publisher" to ""\n'}
+[80.351037] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/robot/ur5_simulation/install/moveit_servo/include\n'}
+[80.351108] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/robot/ur5_simulation/install/moveit_servo/include/moveit_servo\n'}
+[80.351139] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/robot/ur5_simulation/install/moveit_servo/include/moveit_servo/pose_tracking.h\n'}
+[80.351212] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/robot/ur5_simulation/install/moveit_servo/include/moveit_servo/parameter_descriptor_builder.hpp\n'}
+[80.351270] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/robot/ur5_simulation/install/moveit_servo/include/moveit_servo/servo.h\n'}
+[80.351299] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/robot/ur5_simulation/install/moveit_servo/include/moveit_servo/servo_server.h\n'}
+[80.351668] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/robot/ur5_simulation/install/moveit_servo/include/moveit_servo/servo_parameters.h\n'}
+[80.351763] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/robot/ur5_simulation/install/moveit_servo/include/moveit_servo/enforce_limits.hpp\n'}
+[80.351790] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/robot/ur5_simulation/install/moveit_servo/include/moveit_servo/make_shared_from_pool.h\n'}
+[80.351838] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/robot/ur5_simulation/install/moveit_servo/include/moveit_servo/utilities.h\n'}
+[80.351867] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/robot/ur5_simulation/install/moveit_servo/include/moveit_servo/collision_check.h\n'}
+[80.351926] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/robot/ur5_simulation/install/moveit_servo/include/moveit_servo/servo_node.h\n'}
+[80.351954] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/robot/ur5_simulation/install/moveit_servo/include/moveit_servo/status_codes.h\n'}
+[80.351982] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/robot/ur5_simulation/install/moveit_servo/include/moveit_servo/servo_calcs.h\n'}
+[80.352025] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/robot/ur5_simulation/install/moveit_servo/share/moveit_servo/launch\n'}
+[80.352076] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/robot/ur5_simulation/install/moveit_servo/share/moveit_servo/launch/pose_tracking_example.launch.py\n'}
+[80.352129] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/robot/ur5_simulation/install/moveit_servo/share/moveit_servo/launch/servo_example.launch.py\n'}
+[80.352226] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/robot/ur5_simulation/install/moveit_servo/share/moveit_servo/config\n'}
+[80.352267] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/robot/ur5_simulation/install/moveit_servo/share/moveit_servo/config/demo_rviz_config.rviz\n'}
+[80.352397] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/robot/ur5_simulation/install/moveit_servo/share/moveit_servo/config/panda_simulated_config_pose_tracking.yaml\n'}
+[80.352518] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/robot/ur5_simulation/install/moveit_servo/share/moveit_servo/config/pose_tracking_settings.yaml\n'}
+[80.352653] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/robot/ur5_simulation/install/moveit_servo/share/moveit_servo/config/demo_rviz_pose_tracking.rviz\n'}
+[80.352783] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/robot/ur5_simulation/install/moveit_servo/share/moveit_servo/config/panda_simulated_config.yaml\n'}
+[80.352891] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/robot/ur5_simulation/install/moveit_servo/share/moveit_servo/environment/library_path.sh\n'}
+[80.352945] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/robot/ur5_simulation/install/moveit_servo/share/moveit_servo/environment/library_path.dsv\n'}
+[80.353122] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/robot/ur5_simulation/install/moveit_servo/share/ament_index/resource_index/package_run_dependencies/moveit_servo\n'}
+[80.353186] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/robot/ur5_simulation/install/moveit_servo/share/ament_index/resource_index/parent_prefix_path/moveit_servo\n'}
+[80.353240] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/robot/ur5_simulation/install/moveit_servo/share/moveit_servo/environment/ament_prefix_path.sh\n'}
+[80.353287] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/robot/ur5_simulation/install/moveit_servo/share/moveit_servo/environment/ament_prefix_path.dsv\n'}
+[80.353342] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/robot/ur5_simulation/install/moveit_servo/share/moveit_servo/environment/path.sh\n'}
+[80.353387] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/robot/ur5_simulation/install/moveit_servo/share/moveit_servo/environment/path.dsv\n'}
+[80.353431] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/robot/ur5_simulation/install/moveit_servo/share/moveit_servo/local_setup.bash\n'}
+[80.353479] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/robot/ur5_simulation/install/moveit_servo/share/moveit_servo/local_setup.sh\n'}
+[80.353528] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/robot/ur5_simulation/install/moveit_servo/share/moveit_servo/local_setup.zsh\n'}
+[80.353574] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/robot/ur5_simulation/install/moveit_servo/share/moveit_servo/local_setup.dsv\n'}
+[80.353618] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/robot/ur5_simulation/install/moveit_servo/share/moveit_servo/package.dsv\n'}
+[80.353678] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/robot/ur5_simulation/install/moveit_servo/share/ament_index/resource_index/packages/moveit_servo\n'}
+[80.353734] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/robot/ur5_simulation/install/moveit_servo/share/ament_index/resource_index/rclcpp_components/moveit_servo\n'}
+[80.353806] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/robot/ur5_simulation/install/moveit_servo/share/moveit_servo/cmake/export_moveit_servoExport.cmake\n'}
+[80.353878] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/robot/ur5_simulation/install/moveit_servo/share/moveit_servo/cmake/export_moveit_servoExport-release.cmake\n'}
+[80.353929] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/robot/ur5_simulation/install/moveit_servo/share/moveit_servo/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[80.354011] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/robot/ur5_simulation/install/moveit_servo/share/moveit_servo/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[80.354165] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/robot/ur5_simulation/install/moveit_servo/share/moveit_servo/cmake/moveit_servoConfig.cmake\n'}
+[80.354318] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/robot/ur5_simulation/install/moveit_servo/share/moveit_servo/cmake/moveit_servoConfig-version.cmake\n'}
+[80.354444] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/robot/ur5_simulation/install/moveit_servo/share/moveit_servo/package.xml\n'}
+[80.356428] (moveit_servo) CommandEnded: {'returncode': 0}
+[80.370293] (moveit_servo) JobEnded: {'identifier': 'moveit_servo', 'rc': 0}
+[80.370756] (-) EventReactorShutdown: {}
