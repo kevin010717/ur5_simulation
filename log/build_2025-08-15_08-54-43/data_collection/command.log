@@ -1,4 +1,0 @@
-Invoking command in '/home/robot/ur5_simulation/build/data_collection': /usr/bin/cmake --build /home/robot/ur5_simulation/build/data_collection -- -j18 -l18
-Invoked command in '/home/robot/ur5_simulation/build/data_collection' returned '0': /usr/bin/cmake --build /home/robot/ur5_simulation/build/data_collection -- -j18 -l18
-Invoking command in '/home/robot/ur5_simulation/build/data_collection': /usr/bin/cmake --install /home/robot/ur5_simulation/build/data_collection
-Invoked command in '/home/robot/ur5_simulation/build/data_collection' returned '0': /usr/bin/cmake --install /home/robot/ur5_simulation/build/data_collection

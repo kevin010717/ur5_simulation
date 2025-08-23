@@ -1,9 +1,0 @@
-/home/robot/ur5_simulation/build/data_collection/CMakeFiles/uninstall.dir
-/home/robot/ur5_simulation/build/data_collection/CMakeFiles/data_collection_uninstall.dir
-/home/robot/ur5_simulation/build/data_collection/CMakeFiles/test.dir
-/home/robot/ur5_simulation/build/data_collection/CMakeFiles/edit_cache.dir
-/home/robot/ur5_simulation/build/data_collection/CMakeFiles/rebuild_cache.dir
-/home/robot/ur5_simulation/build/data_collection/CMakeFiles/list_install_components.dir
-/home/robot/ur5_simulation/build/data_collection/CMakeFiles/install.dir
-/home/robot/ur5_simulation/build/data_collection/CMakeFiles/install/local.dir
-/home/robot/ur5_simulation/build/data_collection/CMakeFiles/install/strip.dir
