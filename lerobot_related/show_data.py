@@ -7,3 +7,9 @@ loaded_df = pd.read_parquet(os.environ["HOME"] + '/.cache/huggingface/lerobot/le
 #loaded_df = pd.read_parquet(os.environ["HOME"] + '/ur5_simulation/src/data_collection/scripts/my_pusht/data/chunk_000/episode_000014.parquet')
 
 print(loaded_df)
+
+loaded_df = pd.read_parquet(os.environ["HOME"] + '/.cache/huggingface/lerobot/lerobot/aloha_static_coffee/data/chunk-000/episode_000000.parquet')
+# 取前10行
+first_10_rows = loaded_df.head(10)
+# 保存到 CSV 文件
+first_10_rows.to_csv("first_10_rows.csv", index=False)
