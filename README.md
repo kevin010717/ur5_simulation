@@ -1,1 +1,61 @@
 https://www.youtube.com/watch?v=eO5wMzw9LeQ&ab_channel=robotmania
+
+
+sudo apt-get install -y \
+ros-humble-ros-testing \
+ros-humble-moveit \
+ros-humble-moveit-common \
+ros-humble-control-toolbox \
+ros-humble-ros2-control \
+ros-humble-ros2-controllers
+ros-humble-ros-base \
+ros-humble-rmw-fastrtps-cpp \
+ros-humble-rmw-cyclonedds-cpp
+
+conda create -n ros2 python=3.10
+conda activate ros2
+pip install catkin_pkg
+pip3 install --user --upgrade --force-reinstall "numpy==1.24.4"
+pip3 install pandas pyarrow
+export RMW_IMPLEMENTATION=rmw_fastrtps_cpp
+export LD_LIBRARY_PATH=/opt/ros/humble/lib:$LD_LIBRARY_PATH
+export ROS_DOMAIN_ID=0
+
+
+git clone https://github.com/kevin010717/ur5_simulation.git
+cd ur5_simulation
+
+cd ~/ur5_simulation   # 你的工作区根目录
+rm -rf install build log
+colcon build --packages-select moveit_servo
+# 若成功，再不选包地全量构建
+colcon build
+
+source ~/ur5_simulation/install/setup.zsh
+ros2 launch ur5_moveit_config arm_joy_control.launch.py
+python ~/ur5_simulation/lerobot_related/show_data.py 
+python3 ~/ur5_simulation/src/data_collection/scripts/data_collection.py   
+
+ros2 launch ur5_moveit_config arm_difussion_control.launch.py
+python ~/lerobot/examples/2_evaluate_pretrained_policy_ROS.py
+
+# 模型导入
+1.导入urdf
+2.[world(or base-link)]-add-physics-articulation root
+3.[joints] maxforce-1000000 stiffness-200000
+4.[table.urdf tbar.urdf] import 
+5.[physic scene]-time step per second-100
+6.[tbar]-add-colidders preset
+7.[wrist-link]-add-colidders preset
+8.[action graph]
+  1.import graphs and connect
+  2.set domain topicname
+  3.articulation controler-add target-world(base-link)
+9.[cameras]create two cameras
+10.[ros2 ominigraph]tools-robotics-ros2 ominigraph-camera-add-topcamera
+11.[ros2 ominigraph]tools-robotics-ros2 ominigraph-camera-add-wristcamera
+12.[ros2 ominigraph]tools-robotics-ros2 ominigraph-tf Publisher-topicname-add target prim(tool tbar)
+13.[World]-create-physics-physics material-rigid body material-extra -propeties
+14.[tbar]-select physic material
+15.[tool]-select physic material
+
